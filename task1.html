@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 300px;
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+            font-size: 18px;
+            min-width: 60px;
+            max-width: 90px;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255,0.2);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .container1 {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #28a745;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .box h3 {
+            margin: 0;
+            font-size: 18px;
+            color:black;
+        }
+        .box p {
+            margin: 10px 0 0;
+            font-size: 30px;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>School Dashboard</h2>
+            <ul>
+                <li>Dashboard</li>
+                <li>Students</li>
+                <li>Teachers</li>
+                <li>Classes</li>
+                <li>Exams</li>
+                <li>Library</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+        <div class="container1">
+            <div class="header">Welcome to the School Dashboard</div>
+            <div class="stats">
+                <div class="box">
+                    <h3>Total Students</h3>
+                    <p>500</p>
+                </div>
+                <div class="box">
+                    <h3>Total Teachers</h3>
+                    <p>50</p>
+                </div>
+                <div class="box">
+                    <h3>Classes</h3>
+                    <p>20</p>
+                </div>
+                <div class="box">
+                    <h3>Upcoming Exams</h3>
+                    <p>5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
