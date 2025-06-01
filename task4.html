@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+     *{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.bg{
+    background-image: url('https://5.imimg.com/data5/DB/WJ/MY-605509/music-concert.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    padding: 50px;
+}
+.first{
+    background-color: rgb(0, 0,0,0.5);
+    border: 1px dashed white;
+    border-radius: 10px;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+.head{
+    margin-left: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 2px cyan;
+    font-weight: bold;
+}
+.second{
+    border-radius: 30px;
+    background-color: rgb(255, 255,255,0.5);
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+button{
+    margin-left: 5px;
+    background-color: #303134;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+}
+.main{
+    border: 1px dashed white;
+    padding: 20px  10px;
+    border-radius: 20px
+}
+.category{
+    border: 2px dashed white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+.category-name{
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.img{
+    height: 150px;
+    width: 100px;
+    border: 1px solid white;
+    padding: 1px;
+    margin-right: 10px;
+}
+.songs{
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="first">
+            <h1 class="head"> Music World </h1>
+        </div>
+        <div class="second">
+            <button>Home</button>
+            <button>About Us</button>
+            <button>Category ↓</button>
+            <button>Production</button>
+            <button>Gallery</button>
+            <button>Contact Us</button>
+            <button>Login</button>
+        </div>
+        <div class="main">
+            <div class="category">
+                <h1 class="category-name">→ Latest Album ...</h1>
+                <hr/>
+                <div class="songs">
+                    <img src="Dear Comrade.png" alt="song-name" class="img"/>
+                    <img src="Dookudu.png" alt="song-name" class="img"/>
+                    <img src="Geetha Madhuri.png" alt="song-name" class="img"/>
+                    <img src="Nenu Sailaja.png" alt="song-name" class="img"/>
+                    <img src="Yamadonga.png" alt="song-name" class="img"/>
+                    <img src="Varsham.png" alt="song-name" class="img"/>
+                    <img src="Geetha Madhuri.png" alt="song-name" class="img"/>
+                    <img src="Dear Comrade.png" alt="song-name" class="img"/>
+                </div>
+            </div>
+            <div class="category">
+                <h1 class="category-name">→ Top 10 Songs ...</h1>
+                <hr/>
+                <div class="songs">
+                    <img src="Dookudu.png" alt="song-name" class="img"/>
+                    <img src="Varsham.png" alt="song-name" class="img"/>
+                    <img src="Nenu Sailaja.png" alt="song-name" class="img"/>
+                    <img src="Yamadonga.png" alt="song-name" class="img"/>
+                    <img src="Geetha Madhuri.png" alt="song-name" class="img"/>
+                    <img src="Dear Comrade.png" alt="song-name" class="img"/>
+                    <img src="Dookudu.png" alt="song-name" class="img"/>
+                    <img src="Varsham.png" alt="song-name" class="img"/>
+                </div>
+            </div>
+            <div class="category">
+                <h1 class="category-name">→ Top 10 Artist ...</h1>
+                <hr/>
+                <div class="songs">
+                    <img src="Nenu Sailaja.png" alt="song-name" class="img"/>
+                    <img src="Varsham.png" alt="song-name" class="img"/>
+                    <img src="Dear Comrade.png" alt="song-name" class="img"/>
+                    <img src="Dookudu.png" alt="song-name" class="img"/>
+                    <img src="Varsham.png" alt="song-name" class="img"/>
+                    <img src="Yamadonga.png" alt="song-name" class="img"/>
+                    <img src="Dear Comrade.png" alt="song-name" class="img"/>
+                    <img src="Geetha Madhuri.png" alt="song-name" class="img"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
