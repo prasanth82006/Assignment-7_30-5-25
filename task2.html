@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Photo container2</title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          body {
+               font-family: Arial, sans-serif;
+               background-color: #eee;
+          }
+
+          .container1 {
+               background-color: black;
+               color: white;
+               text-align: center;
+               padding: 20px;
+               border-radius: 20px;
+               width: 90%;
+               margin: 20px auto 40px;
+               box-shadow: -4px -4px orange;
+          }
+
+          .container1 h1 {
+               font-size: 28px;
+          }
+
+          .container2 {
+               display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+               gap: 20px;
+               max-width: 1200px;
+               margin: 0 auto;
+               padding: 0 20px 40px;
+               border: 1px solid black;
+               background-color: #fff;
+               box-shadow: 0px -8px 0px black;
+
+          }
+
+          .box {
+               width: 100%;
+               height: 200px;
+               border: 2px solid #ccc;
+               border-radius: 20px;
+               overflow: hidden;
+               background-color: #f0f0f0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               margin: 10px;
+          }
+
+          .box img {
+               width: 100%;
+               height: 100%;
+               background-size: cover;
+               border-radius: 20px;
+               opacity: 0.6;
+          }
+
+     </style>
+</head>
+
+<body>
+
+     <div class="container1">
+          <h1>Photo Gallery</h1>
+     </div>
+
+     <div class="container2">
+          <div class="box">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7nBsEO1R4ZW2a0sl1VnL6utlqjNvmePC4A&s" alt="Nature 1">
+          </div>
+          <div class="box">
+               <img src="https://t3.ftcdn.net/jpg/02/82/67/22/360_F_282672294_g0LwMrnRpYS3jHcMqxQIYkpSOERoXzp3.jpg" alt="Nature 2">
+          </div>
+          <div class="box">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAITfGsM849-tLJkvF642-TaVoYrte6Nhag&s" alt="Nature 3">
+          </div>
+          <div class="box">
+               <img src="" alt="Nature 4">
+          </div>
+          <div class="box">
+               <img src="" alt="Nature 5">
+          </div>
+          <div class="box">
+               <img src="" alt="Nature 6">
+          </div>
+          <div class="box">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7nBsEO1R4ZW2a0sl1VnL6utlqjNvmePC4A&s" alt="Nature 1">
+          </div>
+          <div class="box">
+               <img src="https://t3.ftcdn.net/jpg/02/82/67/22/360_F_282672294_g0LwMrnRpYS3jHcMqxQIYkpSOERoXzp3.jpg" alt="Nature 8">
+          </div>
+     </div>
+
+</body>
+
+</html>
